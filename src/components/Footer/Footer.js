@@ -1,6 +1,10 @@
 import React from 'react';
 import './Footer.css';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 import { Link } from 'react-router-dom';
 import {
     FaFacebook,
@@ -21,15 +25,20 @@ function Footer() {
                     You can unsubscribe at any time.
                 </p>
                 <div className='input-areas'>
-                    <form>
-                        <input
-                            className='footer-input'
-                            name='email'
-                            type='email'
-                            placeholder='Your Email'
-                        />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
-                    </form>
+                    <Form inline>
+                        <Row>
+                            <Col xs="auto">
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Email"
+                                    className=" mr-sm-2"
+                                />
+                            </Col>
+                            <Col xs="auto">
+                                <Button type="submit">Submit</Button>
+                            </Col>
+                        </Row>
+                    </Form>
                 </div>
             </section>
             <div className='footer-links'>
