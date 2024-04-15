@@ -1,6 +1,7 @@
 import './App.css';
 import HomePage from "./pages/HomePage/HomePage";
 import PricingPage from "./pages/PricingPage/PricingPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
@@ -19,7 +20,7 @@ function App() {
         <Route path='/' element={ <HomePage/> } />
         <Route path='/home' element={ <HomePage/> } />
         <Route path='/pricing' element={ <PricingPage/> } />
-        {/* <Route path='/*' element={ <NotFound/> } /> */}
+        <Route path='/*' element={ <NotFoundPage/> } />
       </Routes>
       <Footer />
     </BrowserRouter>
