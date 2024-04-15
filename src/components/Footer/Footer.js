@@ -45,26 +45,26 @@ function Footer() {
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>About Us</h2>
-                        <Link to='/'>Founders</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Service</Link>
-                        <Link to='/'>Privacy Policy</Link>
+                        <Link to='/founders'>Founders</Link>
+                        <Link to='/investors'>Investors</Link>
+                        <Link to='/terms-of-service'>Terms of Service</Link>
+                        <Link to='/privacy-policy'>Privacy Policy</Link>
                     </div>
                     <div className='footer-link-items'>
                         <h2>Contact Us</h2>
-                        <Link to='/'>Contact Form</Link>
-                        <Link to='/'>Live Support</Link>
-                        <Link to='/'>Feature Request</Link>
-                        <Link to='/'>FAQ</Link>
+                        <Link to='/contact-us'>Contact Form</Link>
+                        <Link to='/support'>Live Support</Link>
+                        <Link to='/feature-request'>Feature Request</Link>
+                        <Link to='/faq'>FAQ</Link>
                     </div>
                 </div>
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>Products</h2>
-                        <Link to='/'>Testimonials</Link>
-                        <Link to='/'>Features</Link>
-                        <Link to='/'>Pricing</Link>
-                        <Link to='/'>Ambassadors</Link>
+                        <Link to='/testemonials'>Testimonials</Link>
+                        <Link to='/features'>Features</Link>
+                        <Link to='/pricing'>Pricing</Link>
+                        <Link to='/ambassadors-program'>Ambassadors</Link>
                     </div>
                     <div className='footer-link-items'>
                         <h2>Social Media</h2>
