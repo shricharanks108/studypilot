@@ -1,6 +1,7 @@
 .header-container {
     background-color: #2b2d42;
     max-width: 100% !important;
+    height: 8vh!important;
     padding: 10px;
 }
 
