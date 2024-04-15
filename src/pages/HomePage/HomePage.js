@@ -20,7 +20,7 @@ function HomePage() {
       </div>
       <div style={{ flex: 1, textAlign: 'left', paddingLeft: '50px' }}>
         <h1 className='Welcome'>Introducing StudyPilot!</h1>
-        <p className="slogan">Learning takes flight</p>
+        <p className="slogan">Where learning takes flight</p>
         <p className="why">Why StudyPilot?</p>
         <Button className='learn-more-button' href="/about-us">Learn More</Button>
         <Button className='learn-more-button' href="/sign-up">Sign Up</Button>
