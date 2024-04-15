@@ -21,7 +21,7 @@ function PricingCards({ cardData }) {
                         <li className={cardData.isReports ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isReports ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.reports}</li>
                     </ul>
                     <div className="d-grid">
-                        <a href="#" className="btn btn-primary text-uppercase">Button</a>
+                        <a href="#" className="btn btn-primary text-uppercase">Soar Ahead!</a>
                     </div>
                 </div>
             </div>
