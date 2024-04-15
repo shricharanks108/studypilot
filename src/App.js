@@ -1,5 +1,6 @@
 import './App.css';
 import HomePage from "./pages/HomePage/HomePage";
+import PricingPage from "./pages/PricingPage/PricingPage";
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={ <HomePage/> } />
         <Route path='/home' element={ <HomePage/> } />
+        <Route path='/pricing' element={ <PricingPage/> } />
         {/* <Route path='/*' element={ <NotFound/> } /> */}
       </Routes>
       <Footer />
