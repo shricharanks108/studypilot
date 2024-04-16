@@ -12,6 +12,16 @@ const SignUpPage = () => {
     const [institution, setInstitution] = useState('');
     const [gradeLevel, setGradeLevel] = useState('');
 
+    const gradeLevels = [
+        'Grade Level',
+        'Elementary',
+        'Middle School',
+        'High School',
+        'Undergraduate',
+        'Master\'s',
+        'PhD'
+    ];
+
     const handleSignUp = () => {
         console.log('Signing up with:', {
             email,
@@ -50,13 +60,15 @@ const SignUpPage = () => {
                     onChange={(e) => setInstitution(e.target.value)}
                     className="input-field"
                 />
-                <input
-                    type="text"
-                    placeholder="Grade Level"
+                <select
                     value={gradeLevel}
                     onChange={(e) => setGradeLevel(e.target.value)}
                     className="input-field"
-                />
+                >
+                    {gradeLevels.map((level, index) => (
+                        <option key={index} value={level}>{level}</option>
+                    ))}
+                </select>
                 <input
                     type="email"
                     placeholder="Email"
