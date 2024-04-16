@@ -1,3 +1,97 @@
+/* CSS code for HomePage.css */
+.account-setup h6,
+.queries h6,
+.response-time h6,
+.cost-to-start h6 {
+  color: gray; /* Set text color to gray */
+  margin: 0;
+  padding: 20px 0; /* Add padding around the text */
+}
+
+.pricing-info {
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the container */
+  position: relative;
+  padding: 50px; /* Add padding to prevent bars from touching the edges */
+}
+
+/* Remove the flex-direction column to align items in a row */
+.pricing-info {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-around; /* Distribute space evenly around items */
+}
+
+/* Adjust the margin to prevent overlapping */
+.horizontal-bar, .vertical-bar {
+  margin: 0 auto; /* Centers the bars */
+}
+
+/* Remove text-align center to prevent centering text */
+.left-categories, .right-categories {
+  /* text-align: center; */ /* Removed to uncenter the text within the categories */
+}
+
+/* Additional styles to ensure proper spacing and alignment */
+.account-setup, .queries, .cost-to-start, .response-time {
+  margin-bottom: 20px; /* Adds space below each category */
+}
+
+/* Adjust the position of the horizontal bar to prevent overlapping */
+.horizontal-bar {
+  position: absolute;
+  top: 50%;
+  left: 0; /* Align to the left side */
+  right: 0; /* Align to the right side */
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
 .learn-more-button {
-    margin-right: 12px;
-  }
+  padding: 2%;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+/* Adjust the position of the vertical bar to prevent overlapping */
+.vertical-bar {
+  position: absolute;
+  top: 0; /* Align to the top */
+  bottom: 0; /* Align to the bottom */
+  left: 50%; /* Center the bar horizontally */
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* HomePage.css */
+
+.svg-graphics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text */
+}
+
+.svg-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adds space between the SVG containers */
+}
+
+.svg-container img {
+  width: 40px; /* Adjusted width for a smaller SVG icon */
+  height: auto; /* Keeps the aspect ratio of the SVG icon */
+  margin-right: 10px; /* Adds space between the SVG icon and the text */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container h1,
+.text-container h3 {
+  margin: 0;
+}
