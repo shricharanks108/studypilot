@@ -1,9 +1,11 @@
 import './ContactUsPage.css';
+import Button from 'react-bootstrap/Button'; // Import Button component from react-bootstrap
 
 function ContactUs() {
   return (
-    <div className="container"> {/* Changed from contact-page-container to container */}
+    <div className="container">
       <div className="contact-form-container">
+        <h1></h1>
         <h2>Contact Us</h2>
         <form>
           <div className="form-group">
@@ -21,7 +23,8 @@ function ContactUs() {
             <textarea id="message" name="message" required></textarea>
           </div>
 
-          <button type="submit">Send</button>
+          <Button variant="primary">Send</Button> {/* Use the Button component */}
+          <p> </p>
         </form>
       </div>
     </div>
