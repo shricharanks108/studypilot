@@ -18,11 +18,21 @@ function CoursePage() {
       <div class="chapters">
         <h2>Chapters:</h2>
         <ul>
-          <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}></span>1. Chapter 1 <span style={{ marginLeft: '50px' }}></span> by 4/18</Link></li>
-          <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}></span>2. Chapter 2 <span style={{ marginLeft: '50px' }}></span> by 4/25</Link></li>
-          <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}></span>3. Chapter 3 <span style={{ marginLeft: '50px' }}></span> by 4/30</Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>1.  Tour of Computer Systems</span><span style={{ marginLeft: '50px' }}>by 4/18</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>2.  Representing and Manipulating Information</span><span style={{ marginLeft: '50px' }}>by 4/25</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>3.  Machine Level Representation</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>4.  Processor Architecture</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>5.  Optimizing Program Performance</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>6.  The Memory Heirarchy</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>7.  Linking</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>8.  Exceptional Control Flow</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>9.  Virtual Memory</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>10. System Level I/O</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>11. Network Programming</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
+            <li><Link to="/chapterPage"><span style={{ marginLeft: '20px' }}>12. Concurrent Programming</span><span style={{ marginLeft: '50px' }}>by 4/30</span></Link></li>
         </ul>
       </div>
+
       <div class="exams">
         <h2>Exams:</h2>
         <ul>
