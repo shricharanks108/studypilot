@@ -56,4 +56,32 @@
   .exams ul li a:hover {
     text-decoration: underline;
   }
+  .chapters {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chapter-list {
+    display: grid;
+    grid-template-columns: max-content auto; /* First column width based on content, second column takes up remaining space */
+    grid-gap: -5px; /* Decrease the gap between rows */
+  }
+  
+  .chapter-name,
+  .chapter-date {
+    padding: 5px; /* Add some padding */
+  }
+  
+  .chapter-name a {
+    text-decoration: none; /* Remove underline from links by default */
+    color: black; /* Set link color */
+  }
+  
+  .chapter-name a:hover {
+    text-decoration: underline; /* Underline text when hovering over the link */
+  }
+  
+  .chapter-date {
+    margin-left: 100px; /* Adjust the margin to create space between columns */
+  }
   
