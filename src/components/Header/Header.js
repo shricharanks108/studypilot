@@ -36,7 +36,7 @@ function Header() {
                             </NavDropdown>
                             <Nav.Link className='header-text' href="/pricing">Pricing</Nav.Link>
                             <Nav.Link className='header-text' href="/about-us">About Us</Nav.Link>
-                            <Nav.Link className='header-text' href="/pricing">Contact Us</Nav.Link>
+                            <Nav.Link className='header-text' href="/contact-us">Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <Button className='login-button' type="login" href="/login">Login</Button>
