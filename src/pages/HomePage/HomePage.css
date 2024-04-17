@@ -113,12 +113,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; /* Adjust margin-top as needed */
+  margin-top: 0px; /* Adjust margin-top as needed */
 }
 
 .center-image {
-  width: 90%; /* Make the image width responsive to the container width */
-  max-width: 90%; /* Ensure the image does not exceed the container's width */
+  width: 100%; /* Make the image width responsive to the container width */
+  max-width: 100%; /* Ensure the image does not exceed the container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 30px; /* Adjust the border radius */
 }

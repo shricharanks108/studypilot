@@ -6,7 +6,7 @@ import animationData from './2people.json';
 import DownloadIcon from './download.svg';
 import DocumentIcon from './document.svg';
 import CodeIcon from './code.svg';
-import ColorsImage from './colors.png'; // Import colors.png image
+import ColorsImage from './colors1.png'; // Import colors.png image
 
 function HomePage() {
   return (
