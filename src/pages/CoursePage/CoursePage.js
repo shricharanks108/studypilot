@@ -27,19 +27,19 @@ function CoursePage() {
             <div class="chapter-name"><Link to="/chapterPage">4. Processor Architecture</Link></div>
             <div class="chapter-date">by 2/14</div>
             <div class="chapter-name"><Link to="/chapterPage">5. Optimizing Program Performance</Link></div>
-            <div class="chapter-date">[not needed]</div>
+            <div class="chapter-date">[...]</div>
             <div class="chapter-name"><Link to="/chapterPage">6. The Memory Heirarchy</Link></div>
             <div class="chapter-date">by 2/21</div>
             <div class="chapter-name"><Link to="/chapterPage">7. Linking</Link></div>
-            <div class="chapter-date">[not needed]</div>
+            <div class="chapter-date">[...]</div>
             <div class="chapter-name"><Link to="/chapterPage">8. Exceptional Control Flow</Link></div>
-            <div class="chapter-date">[not needed]</div>
+            <div class="chapter-date">[...]</div>
             <div class="chapter-name"><Link to="/chapterPage">9. Virtual Memory</Link></div>
             <div class="chapter-date">by 2/30</div>
             <div class="chapter-name"><Link to="/chapterPage">10. System Level I/O</Link></div>
-            <div class="chapter-date">[not needed]</div>
+            <div class="chapter-date">[...]</div>
             <div class="chapter-name"><Link to="/chapterPage">11. Network Programming</Link></div>
-            <div class="chapter-date">[not needed]</div>
+            <div class="chapter-date">[...]</div>
             <div class="chapter-name"><Link to="/chapterPage">12. Concurrent Programming</Link></div>
             <div class="chapter-date">by 3/7</div>
         </div>
