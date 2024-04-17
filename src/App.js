@@ -1,5 +1,6 @@
 import './App.css';
 import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 import PricingPage from "./pages/PricingPage/PricingPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Header from "./components/Header/Header"
