@@ -93,7 +93,7 @@ function HomePage() {
           <div className="image-text">
             <h3 style={{ color: 'black', textAlign: 'center' }}>"As a student who's always trying to find the best way to study in all my classes, I found StudyPilot to be a great solution to all the options out there."</h3>
             <h5>Anthony Carter</h5>
-            <h8>New Jersey Institute of Technology, Computer Science 25</h8>
+            <h8>New Jersey Institute of Technology, Computer Science '25</h8>
           </div>
         </div>
       </div>
