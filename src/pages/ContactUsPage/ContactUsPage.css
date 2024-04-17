@@ -1,0 +1,37 @@
+.contact-form-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Further increased roundness */
+  cursor: pointer;
+  display: block;
+  margin-bottom: 60px; /* Added more space for the footer */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container input[type="text"], /* Changed from .contact-page-container to .container */
+.container input[type="email"],
+.container textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
