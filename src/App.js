@@ -1,7 +1,9 @@
 import './App.css';
 import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 import PricingPage from "./pages/PricingPage/PricingPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
@@ -25,6 +27,8 @@ function App() {
         <Route path='/upload' element={ <UploadPage/> } />
         <Route path='/coursePage' element={ <CoursePage/> }/>
         <Route path='/*' element={ <NotFoundPage/> } />
+        <Route path='/about-us' element={ <AboutPage/> } />
+        <Route path='/contact-us' element={ <ContactUsPage/> } />
       </Routes>
       <Footer />
     </BrowserRouter>

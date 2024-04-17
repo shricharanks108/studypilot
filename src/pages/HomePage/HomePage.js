@@ -6,6 +6,7 @@ import animationData from './2people.json';
 import DownloadIcon from './download.svg';
 import DocumentIcon from './document.svg';
 import CodeIcon from './code.svg';
+import ColorsImage from './colors1.png'; // Import colors.png image
 
 function HomePage() {
   return (
@@ -38,6 +39,30 @@ function HomePage() {
         <div className="horizontal-bar"></div> {/* Horizontal bar */}
         <div className="vertical-bar"></div>   {/* Vertical bar */}
         <div className="left-categories">
+          <div className="svg-container">
+            <img src={DownloadIcon} alt="Download Icon" style={{ width: '50px', height: '50px' }} />
+            <div className="text-container">
+              <h5>Save Resources</h5>
+              <p>Get access to downloadable resources</p>
+            </div>
+          </div>
+          <div className="svg-container">
+            <img src={DocumentIcon} alt="Document Icon" style={{ width: '50px', height: '50px' }} />
+            <div className="text-container">
+              <h5>Upload PDFs</h5>
+              <p>Access comprehensive study materials</p>
+            </div>
+          </div>
+          <div className="svg-container">
+            <img src={CodeIcon} alt="Code Icon" style={{ width: '50px', height: '50px' }} />
+            <div className="text-container">
+              <h5>Understand Code</h5>
+              <p>Explore coding exercises and examples</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="left-categories">
           <div className="account-setup">
             <h6>Account Setup</h6>
             <h2>Free</h2>
@@ -48,7 +73,7 @@ function HomePage() {
             <h2>Unlimited</h2>
           </div>
         </div>
-
+        
         <div className="right-categories">
           <div className="cost-to-start">
             <h6>Cost To Get Started</h6>
@@ -63,25 +88,13 @@ function HomePage() {
       </div>
 
       <div className="svg-graphics">
-        <div className="svg-container">
-          <img src={DownloadIcon} alt="Download Icon" style={{ width: '50px', height: '50px' }} />
-          <div className="text-container">
-            <h5>Save Resources</h5>
-            <p>Get access to downloadable resources</p>
-          </div>
-        </div>
-        <div className="svg-container">
-          <img src={DocumentIcon} alt="Document Icon" style={{ width: '50px', height: '50px' }} />
-          <div className="text-container">
-            <h5>Upload PDFs</h5>
-            <p>Access comprehensive study materials</p>
-          </div>
-        </div>
-        <div className="svg-container">
-          <img src={CodeIcon} alt="Code Icon" style={{ width: '50px', height: '50px' }} />
-          <div className="text-container">
-            <h5>Understand Code</h5>
-            <p>Explore coding exercises and examples</p>
+        <div className="image-container">
+          <img src={ColorsImage} alt="Colors Image" className="center-image" />
+          <div className="image-text">
+            <h3 style={{ color: 'black', textAlign: 'center' }}>"As a student who's always looking for the best way to study for 
+            classes, I found StudyPilot to be a fantastic solution among available options."</h3>
+            <h5>Anthony Carter</h5>
+            <h8>New Jersey Institute of Technology, Computer Science '25</h8>
           </div>
         </div>
       </div>

@@ -28,15 +28,19 @@ function Header() {
                             <NavDropdown title={
                                 <span className="header-text">Products</span>
                             } id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/upload">Upload PDF </NavDropdown.Item>
+
+
+                                <NavDropdown.Item href="/product/dashboard">Dashboard</NavDropdown.Item>
+                                <NavDropdown.Item href="/product/study-guides">Study Guides</NavDropdown.Item>
+                                <NavDropdown.Item href="/product/test">Quizzes & Exams</NavDropdown.Item>
+                                <NavDropdown.Item href="/product/textbook">Textbook</NavDropdown.Item>
+                                <NavDropdown.Item href="/upload">Upload Textbook </NavDropdown.Item>
                                 <NavDropdown.Item href="/coursePage">Course Page</NavDropdown.Item>
-                                <NavDropdown.Item href="/product/product-3">Product #3</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="/product/product-3">Product #4</NavDropdown.Item>
+
                             </NavDropdown>
                             <Nav.Link className='header-text' href="/pricing">Pricing</Nav.Link>
                             <Nav.Link className='header-text' href="/about-us">About Us</Nav.Link>
-                            <Nav.Link className='header-text' href="/pricing">Contact Us</Nav.Link>
+                            <Nav.Link className='header-text' href="/contact-us">Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <Button className='login-button' type="login" href="/login">Login</Button>
