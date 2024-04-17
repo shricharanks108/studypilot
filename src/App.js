@@ -5,6 +5,7 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
+import UploadPage from './pages/UploadPage/UploadPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element={ <HomePage/> } />
         <Route path='/home' element={ <HomePage/> } />
         <Route path='/pricing' element={ <PricingPage/> } />
+        <Route path='/upload' element={ <UploadPage/> } />
         <Route path='/*' element={ <NotFoundPage/> } />
       </Routes>
       <Footer />

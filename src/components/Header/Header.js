@@ -28,7 +28,7 @@ function Header() {
                             <NavDropdown title={
                                 <span className="header-text">Products</span>
                             } id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/product/product-1">Product #1</NavDropdown.Item>
+                                <NavDropdown.Item href="/upload">Upload PDF </NavDropdown.Item>
                                 <NavDropdown.Item href="/product/product-2">Product #2</NavDropdown.Item>
                                 <NavDropdown.Item href="/product/product-3">Product #3</NavDropdown.Item>
                                 <NavDropdown.Divider />
