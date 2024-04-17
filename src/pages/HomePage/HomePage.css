@@ -24,9 +24,6 @@
   margin: 0 auto; /* Centers the bars */
 }
 
-.left-categories, .right-categories {
-}
-
 .account-setup, .queries, .cost-to-start, .response-time {
   margin-bottom: 20px; /* Adds space below each category */
 }
@@ -68,11 +65,11 @@
 .svg-container {
   display: flex;
   align-items: center;
-  margin-right: 20px; /* Adds space between the SVG containers */
+  margin-right: 40px; /* Adds space between the SVG containers */
 }
 
 .svg-container img {
-  width: 40px; /* Adjusted width for a smaller SVG icon */
+  width: 60px; /* Adjusted width for a smaller SVG icon */
   height: auto; /* Keeps the aspect ratio of the SVG icon */
   margin-right: 10px; /* Adds space between the SVG icon and the text */
 }
@@ -98,12 +95,13 @@
   margin: 20px; /* Space between icons */
 }
 
+
 .svg-container img {
-  width: 100px; /* Adjust size as needed */
-  height: auto;
-  display: block; /* Ensures the image is block-level for proper centering */
-  margin: 0 auto; /* Center the image */
+  width: 60px; /* Adjusted width for a smaller SVG icon */
+  height: auto; /* Keeps the aspect ratio of the SVG icon */
+  margin-right: 20px; /* Increased space between the SVG icon and the text */
 }
+
 
 .text-container h5,
 .text-container p {
