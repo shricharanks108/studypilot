@@ -13,7 +13,7 @@ function UploadPage() {
   // called when upload button is clicked 
   const handleUpload = () => {
     if (selectedFile) {
-      // Example: Send selectedFile to server for processing
+      // process uploaded file here (loading in chapter breakdown or whatever)
       console.log('Uploading file:', selectedFile);
       setSelectedFile(null);
     } else {

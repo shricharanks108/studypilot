@@ -29,7 +29,7 @@ function Header() {
                                 <span className="header-text">Products</span>
                             } id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/upload">Upload PDF </NavDropdown.Item>
-                                <NavDropdown.Item href="/product/product-2">Product #2</NavDropdown.Item>
+                                <NavDropdown.Item href="/coursePage">Course Page</NavDropdown.Item>
                                 <NavDropdown.Item href="/product/product-3">Product #3</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="/product/product-3">Product #4</NavDropdown.Item>
