@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import PricingPage from "./pages/PricingPage/PricingPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
+import ExamsPage from "./pages/ExamsPage/ExamsPage";
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
@@ -25,6 +26,7 @@ function App() {
         <Route path='/*' element={ <NotFoundPage/> } />
         <Route path='/about-us' element={ <AboutPage/> } />
         <Route path='/contact-us' element={ <ContactUsPage/> } />
+        <Route path='/test' element={ <ExamsPage/> } />
       </Routes>
       <Footer />
     </BrowserRouter>
