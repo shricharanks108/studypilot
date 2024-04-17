@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-text-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    max-width: 60%;
+    max-height: 50%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .icon-text-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .icon {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
