@@ -29,8 +29,8 @@ function HomePage() {
           <p className="Summary" style={{ paddingRight: '170px'}}>
             StudyPilot is a new AI-powered tool helping students achieve the grades they want! Find valuable study resources, notes, generate practice questions and more with ease. No more wasting time scrolling through different websites and apps to get the information you need to know.
           </p>
-          <Button className='learn-more-button' href="#/sign-up">Sign Up</Button>
-          <a className='learn-more-button' href="#/about-us">Learn More →</a>
+          <Button className='learn-more-button' href="https://shricharanks108.github.io/sign-up">Sign Up</Button>
+          <a className='learn-more-button' href="https://shricharanks108.github.io/studypilot/#/about-us">Learn More →</a>
         </div>
       </div>
 
