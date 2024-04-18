@@ -1,0 +1,25 @@
+{
+  "short_name": "StudyPilot",
+  "name": "StudyPilot",
+  "icons": [
+    {
+      "src": "FinalLogo1.png",
+      "sizes": "1024x1024 512x512 128x128 64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "FinalLogo1-1.png",
+      "sizes": "512x512 500x500 128x128 64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "FinalLogo1-2.png",
+      "sizes": "412x412 256x256 128x128 64x64",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
