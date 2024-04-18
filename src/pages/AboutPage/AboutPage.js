@@ -4,7 +4,7 @@ import PeopleIcon from './people.svg';
 
 function AboutUs() {
   return (
-    <div className="about-page-container"> {/* Added a unique parent class */}
+    <div className="about-page-container">
       <div className="container">
         <div className="icon-text-container">
           <img src={PeopleIcon} alt="People" className="icon" />

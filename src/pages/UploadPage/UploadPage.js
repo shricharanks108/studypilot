@@ -10,10 +10,8 @@ function UploadPage() {
     setSelectedFile(event.target.files[0]);
   };
 
-  // called when upload button is clicked 
   const handleUpload = () => {
     if (selectedFile) {
-      // process uploaded file here (loading in chapter breakdown or whatever)
       console.log('Uploading file:', selectedFile);
       setSelectedFile(null);
     } else {

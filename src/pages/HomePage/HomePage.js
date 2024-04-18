@@ -1,12 +1,12 @@
 import React from 'react';
-import './HomePage.css'; // Make sure this path is correct
+import './HomePage.css'; 
 import Lottie from 'react-lottie';
 import Button from 'react-bootstrap/Button';
 import animationData from './2people.json';
 import DownloadIcon from './download.svg';
 import DocumentIcon from './document.svg';
 import CodeIcon from './code.svg';
-import ColorsImage from './colors1.png'; // Import colors.png image
+import ColorsImage from './colors1.png'; 
 
 function HomePage() {
   return (
@@ -29,15 +29,14 @@ function HomePage() {
           <p className="Summary" style={{ paddingRight: '170px'}}>
             StudyPilot is a new AI-powered tool helping students achieve the grades they want! Find valuable study resources, notes, generate practice questions and more with ease. No more wasting time scrolling through different websites and apps to get the information you need to know.
           </p>
-
-          <Button className='learn-more-button' href="/sign-up">Sign Up</Button>
-          <a className='learn-more-button' href="/about-us">Learn More →</a>
+          <Button className='learn-more-button' href="#/sign-up">Sign Up</Button>
+          <a className='learn-more-button' href="#/about-us">Learn More →</a>
         </div>
       </div>
 
       <div className="pricing-info">
-        <div className="horizontal-bar"></div> {/* Horizontal bar */}
-        <div className="vertical-bar"></div>   {/* Vertical bar */}
+        <div className="horizontal-bar"></div> {}
+        <div className="vertical-bar"></div>   {}
         <div className="left-categories">
           <div className="svg-container">
             <img src={DownloadIcon} alt="Download Icon" style={{ width: '50px', height: '50px' }} />
