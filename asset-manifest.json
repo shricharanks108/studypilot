@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/studypilot/static/css/main.f1bee908.css",
-    "main.js": "/studypilot/static/js/main.083c29d3.js",
+    "main.js": "/studypilot/static/js/main.c36d56c5.js",
     "static/js/453.f0b50406.chunk.js": "/studypilot/static/js/453.f0b50406.chunk.js",
     "static/media/background.jpeg": "/studypilot/static/media/background.2c201446f23a460b8538.jpeg",
     "static/media/FinalLogo1-2.png": "/studypilot/static/media/FinalLogo1-2.41e825dcc9de34ca0093.png",
@@ -13,11 +13,11 @@
     "static/media/download.svg": "/studypilot/static/media/download.6bfaf7986f31915675e73fdae47248c4.svg",
     "index.html": "/studypilot/index.html",
     "main.f1bee908.css.map": "/studypilot/static/css/main.f1bee908.css.map",
-    "main.083c29d3.js.map": "/studypilot/static/js/main.083c29d3.js.map",
+    "main.c36d56c5.js.map": "/studypilot/static/js/main.c36d56c5.js.map",
     "453.f0b50406.chunk.js.map": "/studypilot/static/js/453.f0b50406.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1bee908.css",
-    "static/js/main.083c29d3.js"
+    "static/js/main.c36d56c5.js"
   ]
 }
