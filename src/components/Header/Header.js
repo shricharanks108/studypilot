@@ -31,7 +31,7 @@ function Header() {
                             } id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/studypilot/#/product/dashboard">Dashboard</NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/product/study-guides">Study Guides</NavDropdown.Item>
-                                <NavDropdown.Item href="/studypilot/#/product/test">Quizzes & Exams</NavDropdown.Item>
+                                <NavDropdown.Item href="/studypilot/#/product/exams">Quizzes & Exams</NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/product/textbook">Textbook</NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/upload">Upload Textbook </NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/coursePage">Course Page</NavDropdown.Item>
