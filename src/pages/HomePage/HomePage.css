@@ -2,125 +2,71 @@
 .queries h6,
 .response-time h6,
 .cost-to-start h6 {
-  color: gray; /* Set text color to gray */
+  color: gray; 
   margin: 0;
-  padding: 20px 0; /* Add padding around the text */
+  padding: 20px 0;
 }
 
 .pricing-info {
   display: flex;
-  justify-content: space-between; /* Align items to the start and end of the container */
+  justify-content: space-between; 
   position: relative;
-  padding: 50px; /* Add padding to prevent bars from touching the edges */
+  padding: 50px; 
 }
 
 .pricing-info {
   display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: space-around; /* Distribute space evenly around items */
-}
-
-.horizontal-bar, .vertical-bar {
-  margin: 0 auto; /* Centers the bars */
+  align-items: center;
+  justify-content: space-around;
 }
 
 .account-setup, .queries, .cost-to-start, .response-time {
-  margin-bottom: 20px; /* Adds space below each category */
+  margin-bottom: 20px; 
+  margin-right: 40px;
 }
-
+.vertical-bar,
 .horizontal-bar {
-  position: absolute;
-  top: 50%;
-  left: 0; /* Align to the left side */
-  right: 0; /* Align to the right side */
-  height: 2px;
+  position:fixed;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 1;
 }
 
 .learn-more-button {
   padding: 2%;
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
-}
-
-.vertical-bar {
-  position: absolute;
-  top: 0; /* Align to the top */
-  bottom: 0; /* Align to the bottom */
-  left: 50%; /* Center the bar horizontally */
-  width: 2px;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 1;
-}
-
-.svg-graphics {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Center text */
-  margin-bottom: 50px; /* Add extra space underneath the image */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .svg-container {
   display: flex;
-  align-items: center;
-  margin-right: 40px; /* Adds space between the SVG containers */
+  align-items: left;
+  margin: 20px;
 }
 
 .svg-container img {
-  width: 60px; /* Adjusted width for a smaller SVG icon */
-  height: auto; /* Keeps the aspect ratio of the SVG icon */
-  margin-right: 10px; /* Adds space between the SVG icon and the text */
+  height: auto; 
+  margin-right: 20px; /*svg feature logos */
 }
 
-.text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.text-container h1,
-.text-container h3 {
-  margin: 0;
-}
-
-.svg-graphics {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Center text */
-}
-
-.svg-container {
-  margin: 20px; /* Space between icons */
-}
-
-
-.svg-container img {
-  width: 60px; /* Adjusted width for a smaller SVG icon */
-  height: auto; /* Keeps the aspect ratio of the SVG icon */
-  margin-right: 20px; /* Increased space between the SVG icon and the text */
-}
-
-
+/*helpful for aligning*/
 .text-container h5,
 .text-container p {
-  margin: 2px 0; /* Spacing between heading and paragraph */
+  margin: 2px 0;
 }
 
+/*quote image + tet */
 .image-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px; /* Adjust margin-top as needed */
+  margin-top: 0px; 
 }
 
 .center-image {
-  width: 100%; /* Make the image width responsive to the container width */
-  max-width: 100%; /* Ensure the image does not exceed the container's width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 30px; /* Adjust the border radius */
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  border-radius: 30px;
 }
 
 .image-text {
@@ -130,6 +76,10 @@
   width: 90%;
 }
 
-.footer {
-  margin-top: 50px; /* Add extra space above the footer */
+.svg-graphics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  margin-bottom: 50px; /*quote*/
 }

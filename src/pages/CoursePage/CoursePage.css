@@ -1,0 +1,87 @@
+.course_page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .header1 h2{
+    margin-bottom: 20px;
+    font-size: 34px;
+    text-align: left ;
+  }
+  
+  .header2 h2{
+    margin-bottom: -5px;
+    font-size: 24px;
+    text-align: left ;
+  }
+  
+  .link a {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  
+  .link a:hover {
+    text-decoration: underline;
+  }
+  
+  .chapters h2,
+  .exams h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .chapters ul,
+  .exams ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .chapters ul li,
+  .exams ul li {
+    margin-bottom: 5px;
+  }
+  
+  .chapters ul li a,
+  .exams ul li a {
+    text-decoration: none;
+    color: #000; 
+  }
+  
+  .chapters ul li a:hover,
+  .exams ul li a:hover {
+    text-decoration: underline;
+  }
+  .chapters {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chapter-list {
+    display: grid;
+    grid-template-columns: max-content auto; 
+    grid-gap: -5px; 
+  }
+  
+  .chapter-name,
+  .chapter-date {
+    padding: 5px; /* Add some padding */
+  }
+  
+  .chapter-name a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .chapter-name a:hover {
+    text-decoration: underline; 
+  }
+  
+  .chapter-date {
+    margin-left: 100px; 
+  }
+  
