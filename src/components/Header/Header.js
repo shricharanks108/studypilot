@@ -35,7 +35,6 @@ function Header() {
                                 <NavDropdown.Item href="/studypilot/#/product/textbook">Textbook</NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/upload">Upload Textbook </NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/coursePage">Course Page</NavDropdown.Item>
-
                             </NavDropdown>
                             <Nav.Link className='header-text' href="/studypilot/#/pricing">Pricing</Nav.Link>
                             <Nav.Link className='header-text' href="/studypilot/#/about-us">About Us</Nav.Link>

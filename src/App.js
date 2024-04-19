@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import PricingPage from "./pages/PricingPage/PricingPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
+import ExamsPage from "./pages/ExamsPage/ExamsPage";
 import LoginPage from './pages/LoginPage/LoginPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import Header from "./components/Header/Header"
@@ -31,6 +32,7 @@ function App() {
         <Route path='/*' element={ <NotFoundPage/> } />
         <Route path='/about-us' element={ <AboutPage/> } />
         <Route path='/contact-us' element={ <ContactUsPage/> } />
+        <Route path='/exams' element={ <ExamsPage/> } />
         <Route path='/login' element={ <LoginPage/> } />
         <Route path='/sign-up' element={ <SignUpPage/> } />
       </Routes>

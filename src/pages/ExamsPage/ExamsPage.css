@@ -1,0 +1,93 @@
+/* Styles for search input */
+.search-input {
+  border-radius: 10px; /* Rounded corners */
+  padding: 8px; /* Padding for better appearance */
+  position: absolute; /* Positioning absolute */
+  top: 79px; /* Distance from the top */
+  right: 110px; /* Distance from the right */
+}
+
+/* Styles for search button */
+.search-button {
+  border-radius: 10px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for better appearance */
+  position: absolute; /* Positioning absolute */
+  top: 80px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+}
+
+/* Styles for submit form */
+.submit-resources {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  margin-top: 20px; /* Add space between the search box and submit button */
+}
+
+.submit-resources button {
+  margin-top: 20px; /* Add margin above the button */
+  border-radius: 10px;
+}
+
+/* Exams container */
+#examsContainer {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* Styles for exam cards */
+.exam-card {
+  border: none; /* Remove border */
+  border-radius: 10px; /* Increase border-radius */
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soften and spread the shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px); /* Add a lift effect on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for exam header */
+.exam-header {
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  color: #fff; /* Change text color for better contrast */
+  cursor: pointer;
+}
+
+.exam-header h3 {
+  font-size: 1.5rem; /* Increase font size */
+}
+
+.exam-header p {
+  font-size: 1rem; /* Increase font size */
+}
+
+/* Styles for exam body */
+.exam-body {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Add space between buttons */
+  padding: 15px;
+  background-color: #fff;
+}
+
+/* Styles for PDF link */
+.exam-body a {
+  padding: 12px 20px; /* Adjust padding for better appearance */
+  background-color: #0056b3; /* Darken the button color for a modern look */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px; /* Round the corners of the link/button */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.exam-body a:hover {
+  background-color: #003d82; /* Further darken on hover */
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
