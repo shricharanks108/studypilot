@@ -26,7 +26,7 @@ function App() {
         <Route path='/*' element={ <NotFoundPage/> } />
         <Route path='/about-us' element={ <AboutPage/> } />
         <Route path='/contact-us' element={ <ContactUsPage/> } />
-        <Route path='/test' element={ <ExamsPage/> } />
+        <Route path='/exams' element={ <ExamsPage/> } />
       </Routes>
       <Footer />
     </BrowserRouter>
