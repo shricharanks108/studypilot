@@ -29,10 +29,10 @@ function Header() {
                             <NavDropdown title={
                                 <span className="header-text">Products</span>
                             } id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/studypilot/#/product/dashboard">Dashboard</NavDropdown.Item>
-                                <NavDropdown.Item href="/studypilot/#/product/study-guides">Study Guides</NavDropdown.Item>
-                                <NavDropdown.Item href="/studypilot/#/product/exams">Quizzes & Exams</NavDropdown.Item>
-                                <NavDropdown.Item href="/studypilot/#/product/textbook">Textbook</NavDropdown.Item>
+                                <NavDropdown.Item href="/studypilot/#/dashboard">Dashboard</NavDropdown.Item>
+                                <NavDropdown.Item href="/studypilot/#/study-guides">Study Guides</NavDropdown.Item>
+                                <NavDropdown.Item href="/studypilot/#/exams">Quizzes & Exams</NavDropdown.Item>
+                                <NavDropdown.Item href="/studypilot/#/textbook">Textbook</NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/upload">Upload Textbook </NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/coursePage">Course Page</NavDropdown.Item>
                             </NavDropdown>
