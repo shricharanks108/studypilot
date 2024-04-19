@@ -1,43 +1,110 @@
 import React, { useState } from 'react';
 import './ExamsPage.css';
 
-function ExamsPage() {
-  const [exams, setExams] = useState([]);
-  const [selectedExam, setSelectedExam] = useState(null);
+const ExamsPage = () => {
+  const [exams, setExams] = useState([
+    { 
+      course: "MATH 111", 
+      professor: "Dr. Smith", 
+      semester: "Fall 2017", 
+      pdfLink: "https://math.njit.edu/sites/math/files/Math%20111%20Exam%20I%20-%20Fall%202017.pdf",
+      solutionPdfLink: "https://math.njit.edu/sites/math/files/Math%20111%20Exam%20I%20Solutions%20-%20Fall%202017.pdf"
+    },
+    { 
+      course: "PHYS 121", 
+      professor: "Dr. Johnson", 
+      semester: "Spring 2024", 
+      pdfLink: "https://physics.njit.edu/sites/physics/files/Practice%20problems%2C%20Physics%20111%20Common%20Exam%203%2C%20Spring%202024.pdf",
+      solutionPdfLink: "https://physics.njit.edu/sites/physics/files/Formula%20Chart%2C%20Physics%20111%2C%20Common%20Exam%203%20and%20%20Final%20Exam.pdf"
+    },
+    // Add more exam objects here
+  ]);
 
-  function handleFileUpload(event) {
-    const file = event.target.files[0];
-    const courseTag = window.prompt('Please enter the course tag for this exam:');
-    if (file && courseTag) {
-      const newExam = { courseTag, fileName: file.name, file: file };
-      setExams([...exams, newExam]);
-    }
+  const [showSubmitForm, setShowSubmitForm] = useState(false);
+
+  const [newResource, setNewResource] = useState({
+    course: "",
+    professor: "",
+    semester: "",
+    pdfLink: "",
+    solutionPdfLink: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setNewResource(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
   }
 
-  function openPDF(exam) {
-    setSelectedExam(exam);
+  const handleSubmit = () => {
+    setExams(prevExams => [...prevExams, newResource]);
+    setNewResource({
+      course: "",
+      professor: "",
+      semester: "",
+      pdfLink: "",
+      solutionPdfLink: ""
+    });
+  }
+
+  const toggleSubmitForm = () => {
+    setShowSubmitForm(!showSubmitForm);
+  }
+
+  const searchExams = () => {
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+    const filteredExams = exams.filter(exam =>
+      exam.course.toLowerCase().includes(searchTerm) ||
+      exam.professor.toLowerCase().includes(searchTerm) ||
+      exam.semester.toLowerCase().includes(searchTerm)
+    );
+    setExams(filteredExams);
+  }
+
+  const toggleCollapse = (index) => {
+    const newExams = [...exams];
+    newExams[index].collapsed = !newExams[index].collapsed;
+    setExams(newExams);
+  }
+
+  const displayExams = () => {
+    return exams.map((exam, index) => (
+      <div key={index} className="exam-card">
+        <div className="exam-header" onClick={() => toggleCollapse(index)}>
+          <h3>{exam.course}</h3>
+          <p><strong>Professor:</strong> {exam.professor}</p>
+          <p><strong>Semester:</strong> {exam.semester}</p>
+        </div>
+        {!exam.collapsed && 
+          <div className="exam-body">
+            <a href={exam.pdfLink} target="_blank" rel="noopener noreferrer">Open Exam PDF</a>
+            <a href={exam.solutionPdfLink} target="_blank" rel="noopener noreferrer">Open Solution PDF</a>
+          </div>
+        }
+      </div>
+    ));
   }
 
   return (
-    <div id='exams-page-container'>
-      <input type='file' accept='.pdf' onChange={handleFileUpload} />
-      <ul id='exam-list'>
-        {exams.map((exam, index) => (
-          <li key={index} onClick={() => openPDF(exam)}>
-            {exam.courseTag} - {exam.fileName}
-          </li>
-        ))}
-      </ul>
-      {selectedExam && (
-        <div id='pdf-viewer'>
-          <iframe
-            src={URL.createObjectURL(selectedExam.file)}
-            width='100%'
-            height='500px'
-            title='PDF Viewer'
-          ></iframe>
+    <div>
+      <button onClick={toggleSubmitForm}>{showSubmitForm ? "Hide Submit Form" : "Show Submit Form"}</button>
+      {showSubmitForm &&
+        <div className="submit-resources">
+          <input type="text" name="course" value={newResource.course} onChange={handleChange} placeholder="Course" />
+          <input type="text" name="professor" value={newResource.professor} onChange={handleChange} placeholder="Professor" />
+          <input type="text" name="semester" value={newResource.semester} onChange={handleChange} placeholder="Semester" />
+          <input type="text" name="pdfLink" value={newResource.pdfLink} onChange={handleChange} placeholder="Exam PDF Link" />
+          <input type="text" name="solutionPdfLink" value={newResource.solutionPdfLink} onChange={handleChange} placeholder="Solution PDF Link" />
+          <button onClick={handleSubmit} className="submit-button">Submit Resource</button>
         </div>
-      )}
+      }
+      <input type="text" id="searchInput" placeholder="Search exams..." className="search-input" />
+      <button onClick={searchExams} className="search-button">Search</button>
+      <div id="examsContainer">
+        {displayExams()}
+      </div>
     </div>
   );
 }
