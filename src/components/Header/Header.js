@@ -28,10 +28,11 @@ function Header() {
                             <NavDropdown title={
                                 <span className="header-text">Products</span>
                             } id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/dashboard">Dashboard</NavDropdown.Item>
-                                <NavDropdown.Item href="/study-guides">Study Guides</NavDropdown.Item>
-                                <NavDropdown.Item href="/test">Quizzes & Exams</NavDropdown.Item>
                                 <NavDropdown.Item href="/textbook">Textbook</NavDropdown.Item>
+                                <NavDropdown.Item href="/product/dashboard">Dashboard</NavDropdown.Item>
+                                <NavDropdown.Item href="/product/study-guides">Study Guides</NavDropdown.Item>
+                                <NavDropdown.Item href="/product/test">Quizzes & Exams</NavDropdown.Item>
+                                <NavDropdown.Item href="/product/textbook">Textbook</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link className='header-text' href="/pricing">Pricing</Nav.Link>
                             <Nav.Link className='header-text' href="/about-us">About Us</Nav.Link>
