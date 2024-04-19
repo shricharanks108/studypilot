@@ -20,22 +20,14 @@
   justify-content: space-around;
 }
 
-.horizontal-bar, .vertical-bar {
-  margin: 0 auto; 
-}
-
 .account-setup, .queries, .cost-to-start, .response-time {
   margin-bottom: 20px; 
+  margin-right: 40px;
 }
-
+.vertical-bar,
 .horizontal-bar {
-  position: absolute;
-  top: 50%;
-  left: 0; 
-  right: 0; 
-  height: 2px;
+  position:fixed;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 1;
 }
 
 .learn-more-button {
@@ -44,70 +36,24 @@
   color: inherit; 
 }
 
-.vertical-bar {
-  position: absolute;
-  top: 0; 
-  bottom: 0; 
-  left: 50%; 
-  width: 2px;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 1;
-}
-
-.svg-graphics {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; 
-  margin-bottom: 50px; 
-}
-
 .svg-container {
   display: flex;
-  align-items: center;
-  margin-right: 40px; 
-}
-
-.svg-container img {
-  width: 60px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.text-container h1,
-.text-container h3 {
-  margin: 0;
-}
-
-.svg-graphics {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; 
-}
-
-.svg-container {
+  align-items: left;
   margin: 20px;
 }
 
-
 .svg-container img {
-  width: 60px; 
   height: auto; 
-  margin-right: 20px; 
+  margin-right: 20px; /*svg feature logos */
 }
 
-
+/*helpful for aligning*/
 .text-container h5,
 .text-container p {
   margin: 2px 0;
 }
 
+/*quote image + tet */
 .image-container {
   position: relative;
   display: flex;
@@ -130,6 +76,10 @@
   width: 90%;
 }
 
-.footer {
-  margin-top: 50px;
+.svg-graphics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  margin-bottom: 50px; /*quote*/
 }

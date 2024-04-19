@@ -81,7 +81,7 @@ function HomePage() {
 
           <div className="response-time">
             <h6>Response Time</h6>
-            <h2>&lt;20 seconds</h2>
+            <h2>&lt;30 seconds</h2>
           </div>
         </div>
       </div>
