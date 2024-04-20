@@ -18,6 +18,11 @@ body {
 
 .course-card {
     width: calc(25% - 20px);
+    min-height: fit-content;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    height: 300px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
