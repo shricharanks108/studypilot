@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './DashboardPage.css';
 
 const courses = [
-  { id: 1, name: 'Course 1', overallProgress: 70, nextDueProgress: 30, nextDueDate: '2024-05-01' },
-  { id: 2, name: 'Course 2', overallProgress: 50, nextDueProgress: 20, nextDueDate: '2024-05-05' },
-  { id: 3, name: 'Course 3', overallProgress: 85, nextDueProgress: 10, nextDueDate: '2024-04-30' },
-  { id: 4, name: 'Course 4', overallProgress: 40, nextDueProgress: 60, nextDueDate: '2024-05-10' },
+  { id: 1, name: 'chemistry', overallProgress: 70, nextDueProgress: 30, nextDueDate: '2024-05-01' },
+  { id: 2, name: 'math', overallProgress: 50, nextDueProgress: 20, nextDueDate: '2024-05-05' },
+  { id: 3, name: 'cs', overallProgress: 85, nextDueProgress: 10, nextDueDate: '2024-04-30' },
+  { id: 4, name: 'english', overallProgress: 40, nextDueProgress: 60, nextDueDate: '2024-05-10' },
 ];
 
 const CourseCard = ({ course }) => {
@@ -34,11 +34,31 @@ const NewCourseCard = () => {
 };
 
 const DashboardPage = () => {
+  const [coursesData, setCourses] = useState(courses);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+    const filteredCourses = courses.filter(course =>
+      course.name.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+    setCourses(filteredCourses);
+  };
+
   return (
     <div className="course-page">
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search for courses..."
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+        <i className="fa fa-search search-icon"></i>
+      </div>
       <div className="course-list">
         <NewCourseCard />
-        {courses.map(course => (
+        {coursesData.map(course => (
           <CourseCard key={course.id} course={course} />
         ))}
       </div>
