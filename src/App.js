@@ -7,11 +7,13 @@ import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
 import ExamsPage from "./pages/ExamsPage/ExamsPage";
 import LoginPage from './pages/LoginPage/LoginPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer"
-import { Routes, HashRouter, Route } from 'react-router-dom'
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { Routes, HashRouter, Route } from 'react-router-dom';
 import UploadPage from './pages/UploadPage/UploadPage';
-import CoursePage from './pages/CoursePage/CoursePage'
+import CoursePage from './pages/CoursePage/CoursePage';
+import DashboardPage from './pages/DashboardPage/DashboardPage';
+
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path='/*' element={ <NotFoundPage/> } />
         <Route path='/about-us' element={ <AboutPage/> } />
         <Route path='/contact-us' element={ <ContactUsPage/> } />
+        <Route path='/dashboard' element={ <DashboardPage/> } />
         <Route path='/exams' element={ <ExamsPage/> } />
         <Route path='/login' element={ <LoginPage/> } />
         <Route path='/sign-up' element={ <SignUpPage/> } />
