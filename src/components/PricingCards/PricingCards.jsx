@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function PricingCards({ cardData }) {
-    // const {cardData} = props     //instead of giving props in parameter and then destructuring(as shown in this line) the props value in {cardData} variable, we can simply give as {cardData} in paramter
-    // console.log(cardData);       // after destructing, in console it will the display objs data alone , with destructing it will show a obj inside to cardData where the obj details will be held.
-    return <>
+    return (
         <div className="col-lg-4">
             <div className="card mb-5 mb-lg-0">
                 <div className="card-body">
@@ -17,16 +16,17 @@ function PricingCards({ cardData }) {
                         <li className={cardData.isCommunityAccess ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isCommunityAccess ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.communityAccess}</li>
                         <li className={cardData.isPrivateProjects ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isPrivateProjects ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.privateProjects}</li>
                         <li className={cardData.isPhoneSupport ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isPhoneSupport ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.phoneSupport}</li>
-                        <li className={cardData.isSubDomian ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isSubDomian ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.plan === "PRO" ? <><b>Unlimited</b> {cardData.subDomian}</> : <>{cardData.subDomian}</>}</li>
+                        <li className={cardData.isOffline ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isOffline ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.plan === "PRO" ? <><b>Unlimited</b> {cardData.offline}</> : <>{cardData.offline}</>}</li>
                         <li className={cardData.isReports ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isReports ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.reports}</li>
+                        <li className={cardData.isHistory ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isHistory ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.history}</li>
                     </ul>
                     <div className="d-grid">
-                        <a href="#" className="btn btn-primary text-uppercase">Soar Ahead!</a>
+                        <Link to="/sign-up" className="btn btn-primary text-uppercase">Soar Ahead!</Link>
                     </div>
                 </div>
             </div>
         </div>
-    </>
+    );
 }
 
-export default PricingCards
+export default PricingCards;

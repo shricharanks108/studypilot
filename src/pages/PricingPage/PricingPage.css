@@ -9,6 +9,7 @@ section.pricing {
     border-radius: 1rem;
     transition: all 0.2s;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Added margin */
 }
 
 .pricing hr {
@@ -50,7 +51,6 @@ section.pricing {
 }
 
 /* Hover Effects on Card */
-
 @media (min-width: 992px) {
     .pricing .card:hover {
         margin-top: -.25rem;
@@ -66,6 +66,12 @@ section.pricing {
 .pricing-title {
     text-align: center;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 3rem; /* Adjusted font size */
     padding-bottom: 20px;
+}
+
+.pricing .row {
+    justify-content: center;
+    align-items: center; /* Added align-items */
+    height: 100%;
 }

@@ -89,14 +89,18 @@ const ExamsPage = () => {
 
   return (
     <div>
-      <button onClick={toggleSubmitForm}>{showSubmitForm ? "Hide Submit Form" : "Show Submit Form"}</button>
+      <div className="search-and-submit-wrapper">
+        <input type="text" id="searchInput" placeholder="Search exams..." className="search-input" />
+        <button onClick={searchExams} className="search-button">Search</button>
+        <button className="toggle-submit-button" onClick={toggleSubmitForm}>{showSubmitForm ? "Hide Submit Form" : "Show Submit Form"}</button>
+      </div>
       {showSubmitForm &&
         <div className="submit-resources">
-          <input type="text" name="course" value={newResource.course} onChange={handleChange} placeholder="Course" />
-          <input type="text" name="professor" value={newResource.professor} onChange={handleChange} placeholder="Professor" />
-          <input type="text" name="semester" value={newResource.semester} onChange={handleChange} placeholder="Semester" />
-          <input type="text" name="pdfLink" value={newResource.pdfLink} onChange={handleChange} placeholder="Exam PDF Link" />
-          <input type="text" name="solutionPdfLink" value={newResource.solutionPdfLink} onChange={handleChange} placeholder="Solution PDF Link" />
+          <input type="text" name="course" value={newResource.course} onChange={handleChange} placeholder="Course" className="resource-input" />
+          <input type="text" name="professor" value={newResource.professor} onChange={handleChange} placeholder="Professor" className="resource-input" />
+          <input type="text" name="semester" value={newResource.semester} onChange={handleChange} placeholder="Semester" className="resource-input" />
+          <input type="text" name="pdfLink" value={newResource.pdfLink} onChange={handleChange} placeholder="Exam PDF Link" className="resource-input" />
+          <input type="text" name="solutionPdfLink" value={newResource.solutionPdfLink} onChange={handleChange} placeholder="Solution PDF Link" className="resource-input" />
           <button onClick={handleSubmit} className="submit-button">Submit Resource</button>
         </div>
       }

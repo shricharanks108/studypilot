@@ -1,93 +1,144 @@
-/* Styles for search input */
 .search-input {
-  border-radius: 10px; /* Rounded corners */
-  padding: 8px; /* Padding for better appearance */
-  position: absolute; /* Positioning absolute */
-  top: 79px; /* Distance from the top */
-  right: 110px; /* Distance from the right */
+  border-radius: 20px;
+  padding: 12px 20px;
+  position: absolute;
+  top: calc(100px + 20px);
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for search button */
 .search-button {
-  border-radius: 10px; /* Rounded corners */
-  padding: 8px 16px; /* Padding for better appearance */
-  position: absolute; /* Positioning absolute */
-  top: 80px; /* Distance from the top */
-  right: 20px; /* Distance from the right */
+  border-radius: 20px;
+  padding: 12px 20px;
+  position: absolute;
+  top: calc(100px + 22px);
+  right: 20px;
+  background-color: #4e54c8;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Styles for submit form */
+.search-button:hover {
+  background-color: #8f94fb;
+}
+
 .submit-resources {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center elements horizontally */
-  margin-top: 20px; /* Add space between the search box and submit button */
+  position:relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
 }
 
 .submit-resources button {
-  margin-top: 20px; /* Add margin above the button */
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #4e54c8;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Exams container */
+.submit-resources button:hover {
+  background-color: #8f94fb;
+}
+
 #examsContainer {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  padding: 10px;
+  padding: 20px;
   justify-content: center;
+  background-color: #ffffff;
 }
 
-/* Styles for exam cards */
 .exam-card {
-  border: none; /* Remove border */
-  border-radius: 10px; /* Increase border-radius */
+  border: none;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soften and spread the shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .exam-card:hover {
-  transform: translateY(-5px); /* Add a lift effect on hover */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Styles for exam header */
 .exam-header {
-  padding: 15px;
+  padding: 20px;
   background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
-  color: #fff; /* Change text color for better contrast */
+  color: #fff;
   cursor: pointer;
 }
 
 .exam-header h3 {
-  font-size: 1.5rem; /* Increase font size */
+  font-size: 1.8rem;
 }
 
 .exam-header p {
-  font-size: 1rem; /* Increase font size */
+  font-size: 1.2rem;
 }
 
-/* Styles for exam body */
 .exam-body {
   display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 10px; /* Add space between buttons */
-  padding: 15px;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
   background-color: #fff;
 }
 
-/* Styles for PDF link */
 .exam-body a {
-  padding: 12px 20px; /* Adjust padding for better appearance */
-  background-color: #0056b3; /* Darken the button color for a modern look */
+  padding: 12px 20px;
+  background-color: #0056b3;
   color: #fff;
   text-decoration: none;
-  border-radius: 8px; /* Round the corners of the link/button */
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 20px;
 }
 
-.exam-body a:hover {
-  background-color: #003d82; /* Further darken on hover */
-  transform: scale(1.05); /* Slight increase in size on hover */
+.toggle-submit-button {
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.toggle-submit-button:hover {
+  background-color: #8f94fb;
+}
+
+.resource-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.submit-button:hover {
+  background-color: #8f94fb;
+}
+
+.search-and-submit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
 }
