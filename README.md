@@ -1,4 +1,4 @@
-# Welcome to StudyPilot - Where Learning Takes Flight!
+# Welcome to StudyPilot - Where Learning Takes Flight ✈️! 
 
 StudyPilot is an innovative application designed to help students and users study more effectively and efficiently. With StudyPilot, you can organize your study materials, create personalized study plans, track your progress, and collaborate with classmates.
 
