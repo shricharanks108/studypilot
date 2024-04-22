@@ -13,7 +13,8 @@ import { Routes, HashRouter, Route } from 'react-router-dom';
 import UploadPage from './pages/UploadPage/UploadPage';
 import CoursePage from './pages/CoursePage/CoursePage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
-
+import QuizSelectionPage from './pages/QuizSelectionPage/QuizSelectionPage';
+import QuizComponent from './components/QuizComponent/QuizComponent';
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
         <Route path='/exams' element={ <ExamsPage/> } />
         <Route path='/login' element={ <LoginPage/> } />
         <Route path='/sign-up' element={ <SignUpPage/> } />
+        <Route path='/quiz' element={ <QuizSelectionPage/> } />
+        <Route path="/quiz/:questionBank" element={<QuizComponent />} />
       </Routes>
       <Footer />
     </HashRouter>
