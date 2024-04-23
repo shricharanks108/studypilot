@@ -9,7 +9,7 @@
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    width: 70vh;
+    width: 80vh;
     align-self: center;
 }
 
@@ -30,7 +30,7 @@
 
 .options {
     list-style: none;
-    padding: 0;
+    padding-top: 10px;
 }
 
 .option {
@@ -39,9 +39,11 @@
 
 .input,
 .submit-button {
+    min-width: 250px;
     border: 1px solid #ccc !important;
     border-radius: 5px;
     padding: 8px 12px;
+    margin-top: 10px;
 }
 
 .input:focus,
