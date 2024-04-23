@@ -11,6 +11,9 @@ import Footer from "./components/Footer/Footer"
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import UploadPage from './pages/UploadPage/UploadPage';
 import CoursePage from './pages/CoursePage/CoursePage'
+import ChapterList from './pages/ChapterPage/chapterList';
+import ChapterPage from './pages/ChapterPage/chapterPage';
+
 
 function App() {
   return (
@@ -32,6 +35,8 @@ function App() {
         <Route path='/about-us' element={ <AboutPage/> } />
         <Route path='/contact-us' element={ <ContactUsPage/> } />
         <Route path='/login' element={ <LoginPage/> } />
+        <Route path="/chapters" element={<ChapterList />} />
+        <Route path="/chapter/:id" element={<ChapterPage />} />
         <Route path='/sign-up' element={ <SignUpPage/> } />
       </Routes>
       <Footer />
