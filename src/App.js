@@ -11,8 +11,10 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Routes, HashRouter, Route } from 'react-router-dom';
 import UploadPage from './pages/UploadPage/UploadPage';
-import CoursePage from './pages/CoursePage/CoursePage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
+import CoursePage from './pages/CoursePage/CoursePage'
+import ChapterList from './pages/ChapterPage/chapterList';
+import ChapterPage from './pages/ChapterPage/chapterPage';
 import QuizSelectionPage from './pages/QuizSelectionPage/QuizSelectionPage';
 import QuizComponent from './components/QuizComponent/QuizComponent';
 
@@ -38,6 +40,8 @@ function App() {
         <Route path='/dashboard' element={ <DashboardPage/> } />
         <Route path='/exams' element={ <ExamsPage/> } />
         <Route path='/login' element={ <LoginPage/> } />
+        <Route path="/chapters" element={<ChapterList />} />
+        <Route path="/chapter/:id" element={<ChapterPage />} />
         <Route path='/sign-up' element={ <SignUpPage/> } />
         <Route path='/quiz' element={ <QuizSelectionPage/> } />
         <Route path="/quiz/:questionBank" element={<QuizComponent />} />
