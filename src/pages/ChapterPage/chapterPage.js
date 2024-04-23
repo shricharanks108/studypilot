@@ -9,15 +9,15 @@ function ChapterPage() {
 
   return (
     
-    <div className="chapter-page" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
+    <div className="chapter-page" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: '100vh' }}>
       <h2 style={{ marginBottom: '20px', marginTop: '40px' }}>Chapter Study Guide</h2>
-      <div className="pdf-container" style={{ width: '100%', maxWidth: '850px' }}>
+      <div className="pdf-container" style={{ width: '100%', maxWidth: '1200px' }}>
         <embed
           src={pdfPath}
           type="application/pdf"
           frameBorder="0"
           scrolling="auto"
-          height="500px"
+          height="700px"
           width="100%"
         ></embed>
       </div>

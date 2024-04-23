@@ -1,97 +1,137 @@
 .upload_page {
-    margin-top: 50px;
-  }
-  
-  .upload_text {
-    font-size: 20px; 
-    margin-bottom: 10px;
-    margin-top: 20px;
-  }
-  
-  .upload_button {
-    margin-top: 20px;
-    padding: 10px 20px; 
-    font-size: 18px; 
-  }
-  
-  .course-name-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Adjust as needed */
-  }
-  
-  .course-name-label {
-    margin-right: 10px; /* Adjust as needed */
-  }
+  margin-top: 50px;
+}
 
-  .upload-card {
-    border: none;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
+.upload_text {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 
-  .upload-card {
-    padding: 20px;
-    background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .upload-card h3 {
-    font-size: 1.8rem;
-  }
-  
-  .upload-card p {
-    font-size: 1.2rem;
-  }
+.upload_button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px !important;
+  border-width: 2px !important;
+  border-color: #edf2f4 !important;
+  background-color: transparent !important;
+  width: 100px !important;
+  max-width: 100px !important;
+  min-height: max-content !important;
+}
 
-  #uploadContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 0px;
-    padding: 20px;
-    justify-content: center;
-    background-color: #ffffff;
-  }
+.upload_button:hover {
+  background-color: #edf2f4 !important;
+  color: black !important;
+}
 
-  .chapter-list {
-    display: flex; /* Ensure that chapters are displayed in a row (flex container) */
-    flex-direction: column; /* Arrange chapters in a column */
-  }
-  .chapter-row {
-    display: flex; /* Each chapter-row is a flex container */
-  }
+.course-name-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Adjust as needed */
+}
 
-  .chapter-container {
-    flex: 1;
-    align-items: center; /* Align items vertically */
-  }
+.course-name-label {
+  margin-right: 10px;
+  /* Adjust as needed */
+}
 
-  .chapter-name {
-    flex: 1; /* Let the chapter name take up all available space */
-    max-width: 400px; /* Set the maximum width for the chapter name */
-    overflow: hidden; /* Hide any overflow content */
-    text-overflow: ellipsis; /* Display an ellipsis when the content overflows */
-    white-space: nowrap; /* Prevent the content from wrapping */
-    margin-right: 10px; /* Add some space between the chapter name and the textbox */
-    min-width: 400px;
-  }
-  
-  .chapter-date-input {
-    margin-left: 10px; /* Adjust this value as needed */
-    width: 100px;
-    flex: none;
-  }
-  
-  .chapter-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 150px; /* Add space between the elements */
-  }
-  .dueBy {
-    margin-right: 50px;
-  }
+.course-name-input {
+  border-radius: 20px;
+  border-color: black !important;
+  padding: 12px 20px;
+  width: 300px;
+  /* background-color: #fff; */
+  box-shadow: none;
+}
+
+.upload-card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: auto;
+  height: auto;
+}
+
+.upload-card {
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  color: #fff;
+}
+
+.upload-card h3 {
+  font-size: 1.8rem;
+}
+
+.upload-card p {
+  font-size: 1.2rem;
+}
+
+#uploadContainer {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 0px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.chapter-list {
+  display: flex;
+  /* Ensure that chapters are displayed in a row (flex container) */
+  flex-direction: column;
+  /* Arrange chapters in a column */
+}
+
+.chapter-row {
+  display: flex;
+  /* Each chapter-row is a flex container */
+}
+
+.chapter-container {
+  flex: 1;
+  align-items: center;
+  /* Align items vertically */
+}
+
+.chapter-name {
+  flex: 1;
+  /* Let the chapter name take up all available space */
+  max-width: 400px;
+  /* Set the maximum width for the chapter name */
+  overflow: hidden;
+  /* Hide any overflow content */
+  text-overflow: ellipsis;
+  /* Display an ellipsis when the content overflows */
+  white-space: nowrap;
+  /* Prevent the content from wrapping */
+  margin-right: 10px;
+  /* Add some space between the chapter name and the textbox */
+  min-width: 400px;
+}
+
+.chapter-date-input {
+  margin-left: 10px;
+  /* Adjust this value as needed */
+  width: 100px;
+  flex: none;
+}
+
+.chapter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  /* Add space between the elements */
+}
+
+.dueBy {
+  margin-right: 50px;
+}

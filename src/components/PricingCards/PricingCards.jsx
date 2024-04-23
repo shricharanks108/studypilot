@@ -10,7 +10,6 @@ function PricingCards({ cardData }) {
                     <h6 className="card-price text-center">${cardData.price}<span className="period">/month</span></h6>
                     <hr />
                     <ul className="fa-ul">
-                        <li className={cardData.isStorage ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isStorage ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.storage}</li>
                         <li className={cardData.isPublicProjects ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isPublicProjects ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.publicProjects}</li>
                         <li className={cardData.isCommunityAccess ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isCommunityAccess ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.communityAccess}</li>
                         <li className={cardData.isPrivateProjects ? "" : "text-muted"}><span className="fa-li"><i className={cardData.isPrivateProjects ? "fas fa-check" : "fas fa-times"}></i></span>{cardData.privateProjects}</li>

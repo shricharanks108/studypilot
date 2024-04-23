@@ -83,12 +83,15 @@ function UploadPage() {
             <h1 className="create-course-heading">Course: {file.courseName}</h1>
             <h2>Textbook: {file.file.name}</h2>
             <div class="chapters">
+              <div className="chapter-list">
+              <div className="chapter-header">
+              <div><h2>Chapters:</h2></div>
+              <div class="dueBy"><h2>Due by:  </h2></div>
+            </div>
             <div className="chapter-header">
               <div><h2>Chapters:</h2></div>
               <div class="dueBy"><h2>Due by:  </h2></div>
             </div>
-
-              <div className="chapter-list">
               {chapterMap.map((chapter, idx) => (
                 
                 <div key={idx} className="chapter-row">

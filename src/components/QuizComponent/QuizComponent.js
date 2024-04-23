@@ -120,7 +120,6 @@ const questionsData = [
     text: 'A crime that creatively applied technology and received extensive coverage in the news media',
     type: 'short_answer',
   },
-
 ];
 
 
@@ -145,7 +144,7 @@ const QuizComponent = () => {
   return (
     <div className='bigger-quiz'>
       <div className="quiz-container">
-        <h1 className="quiz-title">Quiz</h1>
+        <h1 className="quiz-title">Midterm Practice</h1>
         <div className="questions-container">
           {questions.map(question => (
             <div key={question.id} className="question">
