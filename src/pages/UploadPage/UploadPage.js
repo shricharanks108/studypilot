@@ -1,13 +1,29 @@
 import React, { useState } from 'react';
 import './UploadPage.css'; 
 import Button from 'react-bootstrap/Button';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css'
 import { Link } from 'react-router-dom';
 
+const chapterMap = [
+  { number: '1', name: 'An Introduction to High-Technology Crime', date: null },
+  { number: '2', name: 'Hackers, Crackers, and Phone Phreaks', date: null },
+  { number: '3', name: 'Identity Theft: Tools and Techniques of 21st Century Bandits', date: null },
+  { number: '4', name: 'Digital Child Pornography and the Abuse of Children in Cyberspace', date: null },
+  { number: '5', name: 'Financial Fraud and Con Artistry on the Internet', date: null },
+  { number: '6', name: 'Online Harassment and Cyberstalking', date: null },
+  { number: '7', name: 'Intellectual Property Theft and Digital File Sharing', date: null },
+  { number: '8', name: 'Investigations on the Web: Examining Online Investigations and Sting Operations', date: null },
+  { number: '9', name: 'Seizure of Digital Evidence', date: null },
+  { number: '10', name: 'Executing a Search Warrant for Digital Evidence', date: null },
+  { number: '11', name: 'An Introduction to Computer Forensics', date: null },
+];
 
 function UploadPage() {
   const [uploadedFiles, setUploadedFiles] = useState([]);
   const [selectedFile, setSelectedFile] = useState(null);
   const [courseName, setCourseName] = useState('');
+  const [chapterDates, setChapterDates] = useState(Array(chapterMap.length).fill(null));
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -24,6 +40,7 @@ function UploadPage() {
       setUploadedFiles([...uploadedFiles, newFile]);
       setSelectedFile(null);
       setCourseName('');
+      setChapterDates(Array(chapterMap.length).fill(null));
     } else {
       console.log('No file selected');
     }
@@ -31,6 +48,12 @@ function UploadPage() {
 
   const handleCourseNameChange = (event) => {
     setCourseName(event.target.value);
+  };
+
+  const handleChapterDateChange = (event, idx) => {
+    const newChapterDates = [...chapterDates];
+    newChapterDates[idx] = event.target.value;
+    setChapterDates(newChapterDates);
   };
 
 
@@ -60,19 +83,32 @@ function UploadPage() {
             <h1 className="create-course-heading">Course: {file.courseName}</h1>
             <h2>Textbook: {file.file.name}</h2>
             <div class="chapters">
-              <h2>Chapters:</h2>
+            <div className="chapter-header">
+              <div><h2>Chapters:</h2></div>
+              <div class="dueBy"><h2>Due by:  </h2></div>
+            </div>
+
               <div className="chapter-list">
-                  <div className="chapter-name">1. An Introduction to High-Technology Crime  </div><br/>
-                  <div className="chapter-name">2. Hackers, Crackers, and Phone Phreaks  </div><br/>
-                  <div className="chapter-name">3. Identity Theft: Tools and Techniques of 21st Century Bandits  </div><br/>
-                  <div className="chapter-name">4. Digital Child Pornography and the Abuse of Children in Cyberspace  </div><br/>
-                  <div className="chapter-name">5. Financial Fraud and Con Artistry on the Internet  </div><br/>
-                  <div className="chapter-name">6. Online Harassment and Cyberstalking  </div><br/>
-                  <div className="chapter-name">7. Intellectual Property Theft and Digital File Sharing  </div><br/>
-                  <div className="chapter-name">8. Investigations on the Web: Examining Online Investigations and Sting Operations  </div><br/>
-                  <div className="chapter-name">9. Seizure of Digital Evidence  </div><br/>
-                  <div className="chapter-name">10. Executing a Search Warrant for Digital Evidence  </div><br/>
-                  <div className="chapter-name">11. An Introduction to Computer Forensics </div><br/>
+              {chapterMap.map((chapter, idx) => (
+                
+                <div key={idx} className="chapter-row">
+                  <div className="chapter-container">
+                    <div className="chapter-name">{chapter.number}. {chapter.name}</div>
+                  </div>
+                  <div className="chapter-container">
+                    <input
+                        type="text"
+                        value={chapterDates[idx]}
+                        onChange={(event) => handleChapterDateChange(event, idx)}
+                        className="chapter-date-input"
+                        style={{ width: '100px' }} 
+                      />
+                  </div>
+                  
+                  <br />
+                </div>
+                
+              ))}
               </div>
             </div>
             <Button className="submit_button" style={{ width: '80px'}} href="/studypilot/#/coursePage">Submit</Button>
