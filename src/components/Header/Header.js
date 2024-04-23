@@ -31,7 +31,6 @@ function Header() {
                             } id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/studypilot/#/dashboard">Dashboard</NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/exams">Quizzes & Exams</NavDropdown.Item>
-                                <NavDropdown.Item href="/studypilot/#/textbook">Textbook</NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/upload">Upload Textbook </NavDropdown.Item>
                                 <NavDropdown.Item href="/studypilot/#/coursePage">Course Page</NavDropdown.Item>
                             </NavDropdown>
