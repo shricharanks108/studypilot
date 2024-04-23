@@ -24,39 +24,43 @@
     margin-right: 10px; /* Adjust as needed */
   }
 
-  .exam-card {
+  .upload-card {
     border: none;
-    border-radius: 200px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .exam-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
 
-  .exam-header {
+  .upload-card {
     padding: 20px;
     background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
     color: #fff;
     cursor: pointer;
   }
   
-  .exam-header h3 {
+  .upload-card h3 {
     font-size: 1.8rem;
   }
   
-  .exam-header p {
+  .upload-card p {
     font-size: 1.2rem;
   }
 
-  #examsContainer {
+  #uploadContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 0px;
     padding: 20px;
     justify-content: center;
     background-color: #ffffff;
   }
+
+  .chapter-name {
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
