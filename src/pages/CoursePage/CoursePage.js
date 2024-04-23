@@ -6,10 +6,10 @@ function CoursePage() {
   return (
     <div class="course_page" style={{ display: 'flex', flexDirection: 'column' }}>
       <div class="header1">
-        <h2> CS 350 - Computer Systems</h2>
+        <h2> IT 332 - Digital Crime</h2>
       </div>
       <div class="header2">
-        <h2>Textbook: Computer Systems - A Programmer's Perspective</h2>
+        <h2>Textbook: Cybercrime - The Investigation, Prosecution and Defense of a Computer-Related Crime</h2>
       </div>
       <div class="link">
         <Link to="/upload"><span style={{ marginLeft: '10px' }}></span>Upload</Link>
