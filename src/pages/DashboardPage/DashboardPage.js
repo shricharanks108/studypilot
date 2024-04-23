@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './DashboardPage.css';
+import { Link } from 'react-router-dom';
+
 
 const courses = [
   { id: 1, name: 'chemistry', overallProgress: 70, nextDueProgress: 30, nextDueDate: '2024-05-01' },
@@ -26,10 +28,11 @@ const CourseCard = ({ course }) => {
 };
 
 const NewCourseCard = () => {
+  
   return (
-    <div className="course-card new-course-card">
+    <Link to='/upload'><div className="course-card new-course-card" href="/studypilot/#/upload">
       <h2>Create New Course</h2>
-    </div>
+    </div></Link>
   );
 };
 
