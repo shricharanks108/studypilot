@@ -25,24 +25,29 @@ function UploadPage() {
 
   return (
     <div className="upload_page" style={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
-      <h1 className="create-course-heading">Create a new course</h1>
-      <div className="course-name-container">
-        <label htmlFor="courseName" className="course-name-label">Course Name: </label>
-        <input
-          id="courseName"
-          type="text"
-          value={courseName}
-          onChange={handleCourseNameChange}
-          placeholder="Enter course name"
-          className="course-name-input"
-        />
+      <div id="examsContainer">
+      <div className="exam-header">
+        <h1 className="create-course-heading">Create a new course</h1>
+        <div className="course-name-container">
+          <label htmlFor="courseName" className="course-name-label">Course Name: </label>
+          <input
+            id="courseName"
+            type="text"
+            value={courseName}
+            onChange={handleCourseNameChange}
+            placeholder="Enter course name"
+            className="course-name-input"
+          />
+        </div>
+        <h2 className="upload_text">Upload your textbook PDF here</h2>
+        <input type="file" accept=".pdf" onChange={handleFileChange} />
+        <br/>
+        <Button className="upload_button" style={{ width: '80px'}} onClick={handleUpload}>Upload</Button>
+        {selectedFile && (
+          <p className="file-name">File Name: {selectedFile.name}</p>
+        )}
       </div>
-      <h1 className="upload_text">Upload your textbook PDF here</h1>
-      <input type="file" accept=".pdf" onChange={handleFileChange} />
-      <Button className="upload_button" style={{ width: '80px'}} onClick={handleUpload}>Upload</Button>
-      {selectedFile && (
-        <p className="file-name">File Name: {selectedFile.name}</p>
-      )}
+    </div>
     </div>
   );
   

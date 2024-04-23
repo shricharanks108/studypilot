@@ -3,8 +3,9 @@
   }
   
   .upload_text {
-    font-size: 24px; 
-    margin-bottom: 20px;
+    font-size: 20px; 
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
   
   .upload_button {
@@ -21,4 +22,41 @@
   
   .course-name-label {
     margin-right: 10px; /* Adjust as needed */
+  }
+
+  .exam-card {
+    border: none;
+    border-radius: 200px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .exam-header {
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .exam-header h3 {
+    font-size: 1.8rem;
+  }
+  
+  .exam-header p {
+    font-size: 1.2rem;
+  }
+
+  #examsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #ffffff;
   }
