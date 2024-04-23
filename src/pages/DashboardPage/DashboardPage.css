@@ -96,5 +96,30 @@ body {
 
 .new-course-text {
   font-size: 28px;
+}
 
+.course-card-title {
+  color: black;
+  text-decoration: none;
+}
+
+.beeng:link {
+  color: black;
+  text-decoration: none;
+}
+
+.beeng:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.beeng:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+.beeng:active {
+  color: black;
+  text-decoration: none;
 }

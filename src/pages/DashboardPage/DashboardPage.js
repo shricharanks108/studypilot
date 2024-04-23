@@ -17,12 +17,13 @@ const CourseCard = ({ course }) => {
 
   return (
     <div className="course-card">
-      <h2>{course.name}</h2>
-      <div className="progress-bar overall-progress" style={{ width: overallWidth }}>
-        <div className="progress-bar-inner" style={{ width: overallProgressWidth }}></div>
-        <div className="progress-bar-inner next-due-progress" style={{ width: nextDueWidth }}></div>
-      </div>
-      <p>Next Due Date: {course.nextDueDate}</p>
+      <Link className="beeng" to='/coursePage'><h2 className='course-card-title'>{course.name}</h2>
+        <div className="progress-bar overall-progress" style={{ width: overallWidth }}>
+          <div className="progress-bar-inner" style={{ width: overallProgressWidth }}></div>
+          <div className="progress-bar-inner next-due-progress" style={{ width: nextDueWidth }}></div>
+        </div>
+        <p className='course-card-title'>Next Due Date: {course.nextDueDate}</p>
+      </Link>
     </div>
   );
 };
