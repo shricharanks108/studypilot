@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './UploadPage.css'; 
+import './UploadPage.css';
 import Button from 'react-bootstrap/Button';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
@@ -60,7 +60,7 @@ function UploadPage() {
   return (
     <div className="upload_page" style={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
       <div id="uploadContainer">
-        <div className="upload-card" style={{height: '300px', width: '500px'}}>
+        <div className="upload-card" style={{ height: '300px', width: '500px' }}>
           <h1 className="create-course-heading">Create a new course</h1>
           <div className="course-name-container">
             <label htmlFor="courseName" className="course-name-label">Course Name: </label>
@@ -75,43 +75,46 @@ function UploadPage() {
           </div>
           <h2 className="upload_text">Upload your textbook PDF here</h2>
           <input type="file" accept=".pdf" onChange={handleFileChange} />
-          <br/>
-          <Button className="upload_button" style={{ width: '80px'}} onClick={handleUpload}>Upload</Button>
+          <br />
+          <Button className="upload_button" style={{ width: '80px' }} onClick={handleUpload}>Upload</Button>
         </div>
         {uploadedFiles.map((file, index) => (
           <div className="upload-card" key={index}>
             <h1 className="create-course-heading">Course: {file.courseName}</h1>
             <h2>Textbook: {file.file.name}</h2>
             <div class="chapters">
-            <div className="chapter-header">
-              <div><h2>Chapters:</h2></div>
-              <div class="dueBy"><h2>Due by:  </h2></div>
-            </div>
-
               <div className="chapter-list">
-              {chapterMap.map((chapter, idx) => (
-                
-                <div key={idx} className="chapter-row">
-                  <div className="chapter-container">
-                    <div className="chapter-name">{chapter.number}. {chapter.name}</div>
-                  </div>
-                  <div className="chapter-container">
-                    <input
+                <div className="chapter-header">
+                  <div><h2>Chapters:</h2></div>
+                  <div class="dueBy"><h2>Due by:  </h2></div>
+                </div>
+                <div className="chapter-header">
+                  <div><h2>Chapters:</h2></div>
+                  <div class="dueBy"><h2>Due by:  </h2></div>
+                </div>
+                {chapterMap.map((chapter, idx) => (
+
+                  <div key={idx} className="chapter-row">
+                    <div className="chapter-container">
+                      <div className="chapter-name">{chapter.number}. {chapter.name}</div>
+                    </div>
+                    <div className="chapter-container">
+                      <input
                         type="text"
                         value={chapterDates[idx]}
                         onChange={(event) => handleChapterDateChange(event, idx)}
                         className="chapter-date-input"
-                        style={{ width: '100px' }} 
+                        style={{ width: '100px' }}
                       />
+                    </div>
+
+                    <br />
                   </div>
-                  
-                  <br />
-                </div>
-                
-              ))}
+
+                ))}
               </div>
             </div>
-            <Button className="submit_button" style={{ width: '80px'}} href="/studypilot/#/coursePage">Submit</Button>
+            <Button className="submit_button" style={{ width: '80px' }} href="/studypilot/#/coursePage">Submit</Button>
           </div>
         ))}
       </div>

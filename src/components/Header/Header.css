@@ -1,7 +1,7 @@
 .header-container {
     background-color: #2b2d42;
     max-width: 100% !important;
-    height: 8vh!important;
+    height: 8vh !important;
     padding: 10px;
 }
 
@@ -15,7 +15,7 @@
     /* flex-grow: 0 !important; */
 }
 
-#basic-nav-dropdown{
+#basic-nav-dropdown {
     color: #edf2f4;
     /* font-weight: bold; */
 }
@@ -35,4 +35,4 @@
 .login-button:hover {
     background-color: #edf2f4 !important;
     color: black !important;
-  }
+}
