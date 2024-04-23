@@ -144,7 +144,7 @@ const QuizComponent = () => {
   return (
     <div className='bigger-quiz'>
       <div className="quiz-container">
-        <h1 className="quiz-title">Quiz</h1>
+        <h1 className="quiz-title">Midterm Practice</h1>
         <div className="questions-container">
           {questions.map(question => (
             <div key={question.id} className="question">

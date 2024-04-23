@@ -49,7 +49,7 @@ function CoursePage() {
       <div class="exams">
         <h2>Exams:</h2>
         <ul>
-          <li><Link to="/examPage"><span style={{ marginLeft: '20px' }}></span>Midterm (Ch 1-3) <span style={{ marginLeft: '290px' }}></span>4/26</Link></li>
+          <li><Link to="/quiz/quiz1"><span style={{ marginLeft: '20px' }}></span>Midterm (Ch 1-3) <span style={{ marginLeft: '290px' }}></span>4/26</Link></li>
           <li><Link to="/examPage"><span style={{ marginLeft: '20px' }}></span>Final (Ch 4,6,9,12) <span style={{ marginLeft: '288px' }}></span>5/10</Link></li>
         </ul>
       </div>
