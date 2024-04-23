@@ -1,34 +1,33 @@
-// ChapterPage.js
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
 function ChapterPage() {
   const { id } = useParams();
-  const [summary, setSummary] = useState('');
 
-  useEffect(() => {
-    // Fetch summary data based on chapter ID
-    // Example: Fetch data from server or load from PDF files
-    // Set the summary state with the fetched data
-    // Replace this with your actual data fetching logic
-    const fetchSummary = async () => {
-      try {
-        const response = await fetch(`api/summary/${id}`); // Replace with your API endpoint
-        const data = await response.json();
-        setSummary(data.summary);
-      } catch (error) {
-        console.error('Error fetching summary:', error);
-      }
-    };
-
-    fetchSummary();
-  }, [id]);
+  // Construct the file path based on the chapter ID
+  const pdfPath = `/src/DCSummaries/IT332_Chapter_${id}_LectureNotes.pdf`;
 
   return (
-    <div>
-      <h2>Chapter Summary</h2>
-      <p>{summary}</p>
+    <div className="chapter-page">
+      <h2>Chapter Study Guide</h2>
+      <h4> pdf: {pdfPath}</h4>
+      <div className="pdf-container">
+        {/* <embed
+          src={pdfPath}
+          type="application/pdf"
+          frameBorder="0"
+          scrolling="auto"
+          height="100%"
+          width="100%"
+        ></embed>
+        <iframe
+            src={pdfPath}
+            frameBorder="0"
+            scrolling="auto"
+            height="100%"
+            width="100%"
+        ></iframe> */}
+      </div>
     </div>
   );
 }

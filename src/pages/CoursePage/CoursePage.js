@@ -18,29 +18,29 @@ function CoursePage() {
       <div class="chapters">
         <h2>Chapters:</h2>
         <div class="chapter-list">
-            <div class="chapter-name"><Link to="/chapterPage">1. Tour of Computer Systems</Link></div>
+            <div class="chapter-name"><Link to="/chapter/1">1. Tour of Computer Systems</Link></div>
             <div class="chapter-date">by 1/18</div>
-            <div class="chapter-name"><Link to="/chapterPage">2. Representing and Manipulating Information</Link></div>
+            <div class="chapter-name"><Link to="/chapter/2">2. Representing and Manipulating Information</Link></div>
             <div class="chapter-date">by 1/25</div>
-            <div class="chapter-name"><Link to="/chapterPage">3. Machine Level Representation</Link></div>
+            <div class="chapter-name"><Link to="/chapter/3">3. Machine Level Representation</Link></div>
             <div class="chapter-date">by 1/30</div>
-            <div class="chapter-name"><Link to="/chapterPage">4. Processor Architecture</Link></div>
+            <div class="chapter-name"><Link to="/chapter/4">4. Processor Architecture</Link></div>
             <div class="chapter-date">by 2/14</div>
-            <div class="chapter-name"><Link to="/chapterPage">5. Optimizing Program Performance</Link></div>
+            <div class="chapter-name"><Link to="/chapter/5">5. Optimizing Program Performance</Link></div>
             <div class="chapter-date">[...]</div>
-            <div class="chapter-name"><Link to="/chapterPage">6. The Memory Heirarchy</Link></div>
+            <div class="chapter-name"><Link to="/chapter/6">6. The Memory Heirarchy</Link></div>
             <div class="chapter-date">by 2/21</div>
-            <div class="chapter-name"><Link to="/chapterPage">7. Linking</Link></div>
+            <div class="chapter-name"><Link to="/chapter/7">7. Linking</Link></div>
             <div class="chapter-date">[...]</div>
-            <div class="chapter-name"><Link to="/chapterPage">8. Exceptional Control Flow</Link></div>
+            <div class="chapter-name"><Link to="/chapter/8">8. Exceptional Control Flow</Link></div>
             <div class="chapter-date">[...]</div>
-            <div class="chapter-name"><Link to="/chapterPage">9. Virtual Memory</Link></div>
+            <div class="chapter-name"><Link to="/chapter/9">9. Virtual Memory</Link></div>
             <div class="chapter-date">by 2/30</div>
-            <div class="chapter-name"><Link to="/chapterPage">10. System Level I/O</Link></div>
+            <div class="chapter-name"><Link to="/chapter/10">10. System Level I/O</Link></div>
             <div class="chapter-date">[...]</div>
-            <div class="chapter-name"><Link to="/chapterPage">11. Network Programming</Link></div>
+            <div class="chapter-name"><Link to="/chapter/11">11. Network Programming</Link></div>
             <div class="chapter-date">[...]</div>
-            <div class="chapter-name"><Link to="/chapterPage">12. Concurrent Programming</Link></div>
+            <div class="chapter-name"><Link to="/chapter/12">12. Concurrent Programming</Link></div>
             <div class="chapter-date">by 3/7</div>
         </div>
         </div>
