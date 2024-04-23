@@ -120,7 +120,6 @@ const questionsData = [
     text: 'A crime that creatively applied technology and received extensive coverage in the news media',
     type: 'short_answer',
   },
-
 ];
 
 
