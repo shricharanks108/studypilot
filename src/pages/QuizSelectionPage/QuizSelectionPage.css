@@ -1,0 +1,33 @@
+/* QuizPage.css */
+.quiz-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.select-quiz {
+    text-align: center;
+}
+
+.quiz-list {
+    list-style: none;
+    padding: 0;
+}
+
+.quiz-list li {
+    margin-bottom: 10px;
+}
+
+.quiz-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.quiz-list li a:hover {
+    text-decoration: underline;
+}
