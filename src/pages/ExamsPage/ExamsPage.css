@@ -1,0 +1,144 @@
+.search-input {
+  border-radius: 20px;
+  padding: 12px 20px;
+  position: absolute;
+  top: calc(100px + 20px);
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  border-radius: 20px;
+  padding: 12px 20px;
+  position: absolute;
+  top: calc(100px + 22px);
+  right: 20px;
+  background-color: #4e54c8;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #8f94fb;
+}
+
+.submit-resources {
+  position:relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+}
+
+.submit-resources button {
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #4e54c8;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-resources button:hover {
+  background-color: #8f94fb;
+}
+
+#examsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.exam-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.exam-header {
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  color: #fff;
+  cursor: pointer;
+}
+
+.exam-header h3 {
+  font-size: 1.8rem;
+}
+
+.exam-header p {
+  font-size: 1.2rem;
+}
+
+.exam-body {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.exam-body a {
+  padding: 12px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.toggle-submit-button {
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.toggle-submit-button:hover {
+  background-color: #8f94fb;
+}
+
+.resource-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.submit-button:hover {
+  background-color: #8f94fb;
+}
+
+.search-and-submit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}

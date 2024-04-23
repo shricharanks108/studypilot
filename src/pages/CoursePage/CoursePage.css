@@ -49,7 +49,7 @@
   .chapters ul li a,
   .exams ul li a {
     text-decoration: none;
-    color: #000; /* Blue color for links */
+    color: #000; 
   }
   
   .chapters ul li a:hover,
@@ -63,8 +63,8 @@
   
   .chapter-list {
     display: grid;
-    grid-template-columns: max-content auto; /* First column width based on content, second column takes up remaining space */
-    grid-gap: -5px; /* Decrease the gap between rows */
+    grid-template-columns: max-content auto; 
+    grid-gap: -5px; 
   }
   
   .chapter-name,
@@ -73,15 +73,15 @@
   }
   
   .chapter-name a {
-    text-decoration: none; /* Remove underline from links by default */
-    color: black; /* Set link color */
+    text-decoration: none;
+    color: black;
   }
   
   .chapter-name a:hover {
-    text-decoration: underline; /* Underline text when hovering over the link */
+    text-decoration: underline; 
   }
   
   .chapter-date {
-    margin-left: 100px; /* Adjust the margin to create space between columns */
+    margin-left: 100px; 
   }
   

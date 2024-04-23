@@ -4,20 +4,21 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import PricingPage from "./pages/PricingPage/PricingPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
+import ExamsPage from "./pages/ExamsPage/ExamsPage";
 import LoginPage from './pages/LoginPage/LoginPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer"
-import { Routes, BrowserRouter, Route } from 'react-router-dom'
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { Routes, HashRouter, Route } from 'react-router-dom';
 import UploadPage from './pages/UploadPage/UploadPage';
+import DashboardPage from './pages/DashboardPage/DashboardPage';
 import CoursePage from './pages/CoursePage/CoursePage'
 import ChapterList from './pages/ChapterPage/chapterList';
 import ChapterPage from './pages/ChapterPage/chapterPage';
 
-
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -34,13 +35,15 @@ function App() {
         <Route path='/*' element={ <NotFoundPage/> } />
         <Route path='/about-us' element={ <AboutPage/> } />
         <Route path='/contact-us' element={ <ContactUsPage/> } />
+        <Route path='/dashboard' element={ <DashboardPage/> } />
+        <Route path='/exams' element={ <ExamsPage/> } />
         <Route path='/login' element={ <LoginPage/> } />
         <Route path="/chapters" element={<ChapterList />} />
         <Route path="/chapter/:id" element={<ChapterPage />} />
         <Route path='/sign-up' element={ <SignUpPage/> } />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

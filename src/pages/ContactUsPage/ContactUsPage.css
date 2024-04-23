@@ -17,10 +17,10 @@ button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 10px; /* Rounded border */
+  border-radius: 10px; 
   cursor: pointer;
   display: block;
-  margin-bottom: 20px; /* Adjusted spacing for below */
+  margin-bottom: 20px; 
 }
 
 button:hover {
